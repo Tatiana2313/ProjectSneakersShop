@@ -1,0 +1,417 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D45C1B7C-E7B7-4119-96A3-1791ABA3B7E3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>DataBaseSneakers</RootNamespace>
+    <AssemblyName>DataBaseSneakers</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.DataVisualization, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.DataVisualization.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Design, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.ProcessingObjectModel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.ProcessingObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=15.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.ReportingServices.ReportViewerControl.Winforms.150.1620.0\lib\net40\Microsoft.ReportViewer.WinForms.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.SqlServer.Types, Version=14.0.0.0, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
+      <HintPath>packages\Microsoft.SqlServer.Types.14.0.314.76\lib\net40\Microsoft.SqlServer.Types.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddChek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddChek.Designer.cs">
+      <DependentUpon>AddChek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddJurnalUceta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddJurnalUceta.Designer.cs">
+      <DependentUpon>AddJurnalUceta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddKindSport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddKindSport.Designer.cs">
+      <DependentUpon>AddKindSport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddProvider.Designer.cs">
+      <DependentUpon>AddProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddSneakers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddSneakers.Designer.cs">
+      <DependentUpon>AddSneakers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddTTN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddTTN.Designer.cs">
+      <DependentUpon>AddTTN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AddUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AddUser.Designer.cs">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AdminPanelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminPanelForm.Designer.cs">
+      <DependentUpon>AdminPanelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Database.cs" />
+    <Compile Include="DatabaseMethods.cs" />
+    <Compile Include="EditChek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditChek.Designer.cs">
+      <DependentUpon>EditChek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditJurnalUceta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditJurnalUceta.Designer.cs">
+      <DependentUpon>EditJurnalUceta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditProvider.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditProvider.Designer.cs">
+      <DependentUpon>EditProvider.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSneakers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSneakers.Designer.cs">
+      <DependentUpon>EditSneakers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditSport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditSport.Designer.cs">
+      <DependentUpon>EditSport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditTTN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditTTN.Designer.cs">
+      <DependentUpon>EditTTN.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditUser.Designer.cs">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HelpForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HelpForm.Designer.cs">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Reports\BrandSaleDiagramReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\BrandSaleDiagramReportForm.Designer.cs">
+      <DependentUpon>BrandSaleDiagramReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\ChekInfoReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\ChekInfoReportForm.Designer.cs">
+      <DependentUpon>ChekInfoReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\SneakersInfoReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\SneakersInfoReportForm.Designer.cs">
+      <DependentUpon>SneakersInfoReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Reports\TTNReportForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Reports\TTNReportForm.Designer.cs">
+      <DependentUpon>TTNReportForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RJButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="RJComboBox .cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RJTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RJTextBox.Designer.cs">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SellerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SellerForm.Designer.cs">
+      <DependentUpon>SellerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SneakersDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SneakersDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SneakersDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SneakersDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SneakersDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>SneakersDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="SqlServerTypes\Loader.cs" />
+    <Compile Include="TotalsChek.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalsChek.Designer.cs">
+      <DependentUpon>TotalsChek.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TotalsSneakers.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TotalsSneakers.Designer.cs">
+      <DependentUpon>TotalsSneakers.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserFrom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UserFrom.Designer.cs">
+      <DependentUpon>UserFrom.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AddChek.resx">
+      <DependentUpon>AddChek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddJurnalUceta.resx">
+      <DependentUpon>AddJurnalUceta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddKindSport.resx">
+      <DependentUpon>AddKindSport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProvider.resx">
+      <DependentUpon>AddProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddSneakers.resx">
+      <DependentUpon>AddSneakers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddTTN.resx">
+      <DependentUpon>AddTTN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddUser.resx">
+      <DependentUpon>AddUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AdminPanelForm.resx">
+      <DependentUpon>AdminPanelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditChek.resx">
+      <DependentUpon>EditChek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditJurnalUceta.resx">
+      <DependentUpon>EditJurnalUceta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditProvider.resx">
+      <DependentUpon>EditProvider.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSneakers.resx">
+      <DependentUpon>EditSneakers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditSport.resx">
+      <DependentUpon>EditSport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditTTN.resx">
+      <DependentUpon>EditTTN.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditUser.resx">
+      <DependentUpon>EditUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HelpForm.resx">
+      <DependentUpon>HelpForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Reports\BrandSaleDiagramReport.rdlc" />
+    <EmbeddedResource Include="Reports\BrandSaleDiagramReportForm.resx">
+      <DependentUpon>BrandSaleDiagramReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\ChekInfoReport.rdlc" />
+    <EmbeddedResource Include="Reports\ChekInfoReportForm.resx">
+      <DependentUpon>ChekInfoReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\SneakersInfoReport.rdlc" />
+    <EmbeddedResource Include="Reports\SneakersInfoReportForm.resx">
+      <DependentUpon>SneakersInfoReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Reports\TTNReport.rdlc" />
+    <EmbeddedResource Include="Reports\TTNReportForm.resx">
+      <DependentUpon>TTNReportForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RJTextBox.resx">
+      <DependentUpon>RJTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SellerForm.resx">
+      <DependentUpon>SellerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalsChek.resx">
+      <DependentUpon>TotalsChek.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TotalsSneakers.resx">
+      <DependentUpon>TotalsSneakers.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserFrom.resx">
+      <DependentUpon>UserFrom.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="SneakersDataSet.xsc">
+      <DependentUpon>SneakersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SneakersDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SneakersDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SneakersDataSet.xss">
+      <DependentUpon>SneakersDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="SneakersDataSet1.xsc">
+      <DependentUpon>SneakersDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SneakersDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SneakersDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SneakersDataSet1.xss">
+      <DependentUpon>SneakersDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="SneakersDataSet2.xsc">
+      <DependentUpon>SneakersDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="SneakersDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>SneakersDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="SneakersDataSet2.xss">
+      <DependentUpon>SneakersDataSet2.xsd</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="image\buttonclose.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="SqlServerTypes\readme.htm" />
+    <Content Include="SqlServerTypes\x64\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x64\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\msvcr120.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SqlServerTypes\x86\SqlServerSpatial140.dll">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

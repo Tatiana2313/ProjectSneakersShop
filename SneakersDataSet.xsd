@@ -1,0 +1,116 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SneakersDataSet" targetNamespace="http://tempuri.org/SneakersDataSet.xsd" xmlns:mstns="http://tempuri.org/SneakersDataSet.xsd" xmlns="http://tempuri.org/SneakersDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SneakersConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SneakersConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DataBaseSneakers.Properties.Settings.GlobalReference.Default.SneakersConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewSneakersInfoTableAdapter" GeneratorDataComponentClassName="ViewSneakersInfoTableAdapter" Name="ViewSneakersInfo" UserDataComponentName="ViewSneakersInfoTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SneakersConnectionString (Settings)" DbObjectName="Sneakers.dbo.ViewSneakersInfo" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT cod_sneakers, Sneakers_name, Vendor_code, brand, Producing_country, name_sport, material, gender, size, color, unit_price FROM dbo.ViewSneakersInfo</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="cod_sneakers" DataSetColumn="cod_sneakers" />
+              <Mapping SourceColumn="Sneakers_name" DataSetColumn="Sneakers_name" />
+              <Mapping SourceColumn="Vendor_code" DataSetColumn="Vendor_code" />
+              <Mapping SourceColumn="brand" DataSetColumn="brand" />
+              <Mapping SourceColumn="Producing_country" DataSetColumn="Producing_country" />
+              <Mapping SourceColumn="name_sport" DataSetColumn="name_sport" />
+              <Mapping SourceColumn="material" DataSetColumn="material" />
+              <Mapping SourceColumn="gender" DataSetColumn="gender" />
+              <Mapping SourceColumn="size" DataSetColumn="size" />
+              <Mapping SourceColumn="color" DataSetColumn="color" />
+              <Mapping SourceColumn="unit_price" DataSetColumn="unit_price" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SneakersDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="SneakersDataSet" msprop:Generator_DataSetName="SneakersDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViewSneakersInfo" msprop:Generator_RowEvHandlerName="ViewSneakersInfoRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewSneakersInfoRowDeleted" msprop:Generator_RowDeletingName="ViewSneakersInfoRowDeleting" msprop:Generator_RowEvArgName="ViewSneakersInfoRowChangeEvent" msprop:Generator_TablePropName="ViewSneakersInfo" msprop:Generator_RowChangedName="ViewSneakersInfoRowChanged" msprop:Generator_RowChangingName="ViewSneakersInfoRowChanging" msprop:Generator_TableClassName="ViewSneakersInfoDataTable" msprop:Generator_RowClassName="ViewSneakersInfoRow" msprop:Generator_TableVarName="tableViewSneakersInfo" msprop:Generator_UserTableName="ViewSneakersInfo">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="cod_sneakers" msprop:Generator_ColumnPropNameInRow="cod_sneakers" msprop:Generator_ColumnPropNameInTable="cod_sneakersColumn" msprop:Generator_ColumnVarNameInTable="columncod_sneakers" msprop:Generator_UserColumnName="cod_sneakers" type="xs:short" />
+              <xs:element name="Sneakers_name" msprop:Generator_ColumnPropNameInRow="Sneakers_name" msprop:Generator_ColumnPropNameInTable="Sneakers_nameColumn" msprop:Generator_ColumnVarNameInTable="columnSneakers_name" msprop:Generator_UserColumnName="Sneakers_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Vendor_code" msprop:Generator_ColumnPropNameInRow="Vendor_code" msprop:Generator_ColumnPropNameInTable="Vendor_codeColumn" msprop:Generator_ColumnVarNameInTable="columnVendor_code" msprop:Generator_UserColumnName="Vendor_code">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="8" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="brand" msprop:Generator_ColumnPropNameInRow="brand" msprop:Generator_ColumnPropNameInTable="brandColumn" msprop:Generator_ColumnVarNameInTable="columnbrand" msprop:Generator_UserColumnName="brand">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Producing_country" msprop:Generator_ColumnPropNameInRow="Producing_country" msprop:Generator_ColumnPropNameInTable="Producing_countryColumn" msprop:Generator_ColumnVarNameInTable="columnProducing_country" msprop:Generator_UserColumnName="Producing_country">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="name_sport" msprop:Generator_ColumnPropNameInRow="name_sport" msprop:Generator_ColumnPropNameInTable="name_sportColumn" msprop:Generator_ColumnVarNameInTable="columnname_sport" msprop:Generator_UserColumnName="name_sport">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="material" msprop:Generator_ColumnPropNameInRow="material" msprop:Generator_ColumnPropNameInTable="materialColumn" msprop:Generator_ColumnVarNameInTable="columnmaterial" msprop:Generator_UserColumnName="material">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="40" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="gender" msprop:Generator_ColumnPropNameInRow="gender" msprop:Generator_ColumnPropNameInTable="genderColumn" msprop:Generator_ColumnVarNameInTable="columngender" msprop:Generator_UserColumnName="gender">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="1" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="size" msprop:Generator_ColumnPropNameInRow="size" msprop:Generator_ColumnPropNameInTable="sizeColumn" msprop:Generator_ColumnVarNameInTable="columnsize" msprop:Generator_UserColumnName="size" type="xs:short" />
+              <xs:element name="color" msprop:Generator_ColumnPropNameInRow="color" msprop:Generator_ColumnPropNameInTable="colorColumn" msprop:Generator_ColumnVarNameInTable="columncolor" msprop:Generator_UserColumnName="color">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unit_price" msprop:Generator_ColumnPropNameInRow="unit_price" msprop:Generator_ColumnPropNameInTable="unit_priceColumn" msprop:Generator_ColumnVarNameInTable="columnunit_price" msprop:Generator_UserColumnName="unit_price" type="xs:decimal" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:ViewSneakersInfo" />
+      <xs:field xpath="mstns:cod_sneakers" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>

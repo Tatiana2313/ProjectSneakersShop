@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="SneakersDataSet1" targetNamespace="http://tempuri.org/SneakersDataSet1.xsd" xmlns:mstns="http://tempuri.org/SneakersDataSet1.xsd" xmlns="http://tempuri.org/SneakersDataSet1.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="SneakersConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="SneakersConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.DataBaseSneakers.Properties.Settings.GlobalReference.Default.SneakersConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="ViewSneakersTTNTableAdapter" GeneratorDataComponentClassName="ViewSneakersTTNTableAdapter" Name="ViewSneakersTTN" UserDataComponentName="ViewSneakersTTNTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="SneakersConnectionString (Settings)" DbObjectName="Sneakers.dbo.ViewSneakersTTN" DbObjectType="View" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="false">
+                    <CommandText>SELECT num_doc, date_post, provider_name, Sneakers_name, brand, unit_price, number_of_sneakers, total FROM dbo.ViewSneakersTTN</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="num_doc" DataSetColumn="num_doc" />
+              <Mapping SourceColumn="date_post" DataSetColumn="date_post" />
+              <Mapping SourceColumn="provider_name" DataSetColumn="provider_name" />
+              <Mapping SourceColumn="Sneakers_name" DataSetColumn="Sneakers_name" />
+              <Mapping SourceColumn="brand" DataSetColumn="brand" />
+              <Mapping SourceColumn="unit_price" DataSetColumn="unit_price" />
+              <Mapping SourceColumn="number_of_sneakers" DataSetColumn="number_of_sneakers" />
+              <Mapping SourceColumn="total" DataSetColumn="total" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="SneakersDataSet1" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_UserDSName="SneakersDataSet1" msprop:Generator_DataSetName="SneakersDataSet1">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="ViewSneakersTTN" msprop:Generator_RowEvHandlerName="ViewSneakersTTNRowChangeEventHandler" msprop:Generator_RowDeletedName="ViewSneakersTTNRowDeleted" msprop:Generator_RowDeletingName="ViewSneakersTTNRowDeleting" msprop:Generator_RowEvArgName="ViewSneakersTTNRowChangeEvent" msprop:Generator_TablePropName="ViewSneakersTTN" msprop:Generator_RowChangedName="ViewSneakersTTNRowChanged" msprop:Generator_RowChangingName="ViewSneakersTTNRowChanging" msprop:Generator_TableClassName="ViewSneakersTTNDataTable" msprop:Generator_RowClassName="ViewSneakersTTNRow" msprop:Generator_TableVarName="tableViewSneakersTTN" msprop:Generator_UserTableName="ViewSneakersTTN">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="num_doc" msprop:Generator_ColumnPropNameInRow="num_doc" msprop:Generator_ColumnPropNameInTable="num_docColumn" msprop:Generator_ColumnVarNameInTable="columnnum_doc" msprop:Generator_UserColumnName="num_doc" type="xs:short" />
+              <xs:element name="date_post" msprop:Generator_ColumnPropNameInRow="date_post" msprop:Generator_ColumnPropNameInTable="date_postColumn" msprop:Generator_ColumnVarNameInTable="columndate_post" msprop:Generator_UserColumnName="date_post" type="xs:dateTime" />
+              <xs:element name="provider_name" msprop:Generator_ColumnPropNameInRow="provider_name" msprop:Generator_ColumnPropNameInTable="provider_nameColumn" msprop:Generator_ColumnVarNameInTable="columnprovider_name" msprop:Generator_UserColumnName="provider_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Sneakers_name" msprop:Generator_ColumnPropNameInRow="Sneakers_name" msprop:Generator_ColumnPropNameInTable="Sneakers_nameColumn" msprop:Generator_ColumnVarNameInTable="columnSneakers_name" msprop:Generator_UserColumnName="Sneakers_name">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="brand" msprop:Generator_ColumnPropNameInRow="brand" msprop:Generator_ColumnPropNameInTable="brandColumn" msprop:Generator_ColumnVarNameInTable="columnbrand" msprop:Generator_UserColumnName="brand">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="20" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="unit_price" msprop:Generator_ColumnPropNameInRow="unit_price" msprop:Generator_ColumnPropNameInTable="unit_priceColumn" msprop:Generator_ColumnVarNameInTable="columnunit_price" msprop:Generator_UserColumnName="unit_price" type="xs:decimal" />
+              <xs:element name="number_of_sneakers" msprop:Generator_ColumnPropNameInRow="number_of_sneakers" msprop:Generator_ColumnPropNameInTable="number_of_sneakersColumn" msprop:Generator_ColumnVarNameInTable="columnnumber_of_sneakers" msprop:Generator_UserColumnName="number_of_sneakers" type="xs:short" />
+              <xs:element name="total" msdata:ReadOnly="true" msprop:Generator_ColumnPropNameInRow="total" msprop:Generator_ColumnPropNameInTable="totalColumn" msprop:Generator_ColumnVarNameInTable="columntotal" msprop:Generator_UserColumnName="total" type="xs:decimal" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
